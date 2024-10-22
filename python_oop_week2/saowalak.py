@@ -1,0 +1,7 @@
+print("hello python")
+print("เสาวลักษณ์ ปานแก้ว")
+print("แตงกวา")
+print("18")
+print("17")
+print("67319010038")
+print("เล่นเกม")
