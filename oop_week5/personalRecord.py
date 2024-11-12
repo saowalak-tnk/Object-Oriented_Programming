@@ -1,4 +1,4 @@
-resume = {'name':'','nickname':'','stdid':'','hobby':'','color':''}
+resume = {}
 no = int(input("จำนวนคนที่ป้อน : "))
 for i in range(1,no+1):
     resume['name'] = str(input('กรอกชื่อ :'))
