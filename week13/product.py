@@ -46,6 +46,6 @@ class Clothes(Product):
 pro1 = Product('book', 0)
 phone1 = Phone("IPhone16", 50, 'apple')
 notebook1 = Notebook('acer', 20, 'Windows')
-clothes1 = Clothes('nile', 100, 'M')
+clothes1 = Clothes('nike', 100, 'M')
 phone1.edit()
 print(phone1.detail())
