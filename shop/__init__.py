@@ -5,10 +5,10 @@ class Managerdb:
             host = host,
             user = user,
             password = password,
-            database = database
+            database = database #แอตทริบิวต์
         )
         self.mycursor = self.mydb.cursor()
-    def selectdb(self, table):
+    def selectdb(self, table): #เมธอด
         sql = f"SELECT * FROM {table}"
         self.mycursor.execute(sql)
         show = self.mycursor.fetchall()
@@ -57,7 +57,7 @@ class Managerdb:
             return True
         else:
             return False
-    def insert_oders(self, date,amount,status):
+    def insert_orders(self, date,amount,status):
         sql = "INSERT INTO orders  VALUES (%s, %s, %s, %s)"
         val_sql = (None, date,amount,status)
         self.mycursor.execute(sql, val_sql)
@@ -67,8 +67,8 @@ class Managerdb:
         else:
             return False
 
-customer1 = Managerdb('localhost','root','9395','shop')
-print(customer1.editdb('categories','category_name','category_id',3,"ดราม่า"))
+customer1 = Managerdb('localhost','root','9395','shop') #สร้างออบเจ็ค
+print(customer1.insert_categories("โลกสวย")) #เรียกใช้เมธอด
 
 
     
